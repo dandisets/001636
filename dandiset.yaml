@@ -42,9 +42,9 @@ access:
   status: dandi:OpenAccess
 assetsSummary:
   approach:
-  - name: electrophysiological approach
-    schemaKey: ApproachType
   - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
     schemaKey: ApproachType
   dataStandard:
   - identifier: RRID:SCR_015242
@@ -53,15 +53,15 @@ assetsSummary:
   measurementTechnique:
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
-  - name: behavioral technique
-    schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 6403360243
+  numberOfBytes: 6417220451
   numberOfFiles: 447
   numberOfSubjects: 2
   schemaKey: AssetsSummary
@@ -70,10 +70,10 @@ assetsSummary:
     name: Macaca mulatta - Rhesus monkey
     schemaKey: SpeciesType
   variableMeasured:
-  - ProcessingModule
-  - Units
   - SpatialSeries
   - ElectrodeGroup
+  - ProcessingModule
+  - Units
   - ElectricalSeries
 citation: Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2026) Pyramidal
   tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor

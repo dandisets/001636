@@ -61,8 +61,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 5601618371
-  numberOfFiles: 423
+  numberOfBytes: 6417567767
+  numberOfFiles: 447
   numberOfSubjects: 2
   schemaKey: AssetsSummary
   species:
@@ -100,13 +100,6 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
-- affiliation: []
-  email: h.mayorquin@gmail.com
-  includeInCitation: false
-  name: Mayorquin, Heberto
-  roleName:
-  - dcite:DataCurator
-  schemaKey: Person
 - affiliation:
   - identifier: https://ror.org/03czfpz43
     name: Emory University
@@ -131,7 +124,10 @@ contributor:
   roleName:
   - dcite:Funder
   schemaKey: Organization
-- identifier: 0000-0002-5937-7537
+- affiliation:
+  - name: CatalystNeuro
+    schemaKey: Affiliation
+  identifier: 0000-0002-5937-7537
   name: Mayorquin, Heberto
   roleName:
   - dcite:DataCurator

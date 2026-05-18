@@ -94,7 +94,14 @@ contributor:
   - dcite:Author
   - dcite:ContactPerson
   schemaKey: Person
-- identifier: 0000-0003-2855-0672
+- affiliation:
+  - identifier: https://ror.org/02he5dz58
+    name: Institut des Sciences Cognitives Marc Jeannerod
+    schemaKey: Affiliation
+  - identifier: https://ror.org/029brtt94
+    name: Université Claude Bernard Lyon 1
+    schemaKey: Affiliation
+  identifier: 0000-0003-2855-0672
   includeInCitation: true
   name: Pasquereau, Benjamin
   roleName:
@@ -109,6 +116,7 @@ contributor:
   name: DeLong, Mahlon R.
   roleName:
   - dcite:Author
+  - dcite:DataCollector
   schemaKey: Person
 - awardNumber: NS044551
   identifier: https://ror.org/01s5ya894
@@ -122,7 +130,8 @@ contributor:
   roleName:
   - dcite:Funder
   schemaKey: Organization
-- identifier: https://ror.org/03zj4c476
+- awardNumber: ASAP-020519
+  identifier: https://ror.org/03zj4c476
   name: Aligning Science Across Parkinson's (ASAP)
   roleName:
   - dcite:Funder
@@ -136,6 +145,42 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
+- awardNumber: NS070865
+  identifier: https://ror.org/01s5ya894
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS070865
+  identifier: https://ror.org/01cwqze88
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS055197
+  identifier: https://ror.org/01s5ya894
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS055197
+  identifier: https://ror.org/01cwqze88
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS076405
+  identifier: https://ror.org/01s5ya894
+  name: National Institute of Neurological Disorders and Stroke
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: NS076405
+  identifier: https://ror.org/01cwqze88
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2025-11-11T15:48:24.913269+00:00'
 description: 'Electrophysiology recordings from primary motor cortex (M1) of macaque
   monkeys (Macaca mulatta) during visuomotor step-tracking tasks, collected before
@@ -193,6 +238,21 @@ relatedResource:
   repository: Brain A Journal of Neurology
   resourceType: dcite:JournalArticle
   schemaKey: Resource
+- identifier: https://github.com/catalystneuro/turner-lab-to-nwb
+  name: NWB conversion code for the Turner Lab MPTP M1 dataset
+  relation: dcite:IsSupplementedBy
+  repository: GitHub
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/catalystneuro/turner-lab-to-nwb
+- identifier: https://github.com/catalystneuro/turner-lab-to-nwb/tree/main/notebooks
+  name: 'Tutorial notebooks: data loading, PETH, GLM analysis, and antidromic spike
+    detection'
+  relation: dcite:IsSupplementedBy
+  repository: GitHub
+  resourceType: dcite:ComputationalNotebook
+  schemaKey: Resource
+  url: https://github.com/catalystneuro/turner-lab-to-nwb/tree/main/notebooks
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10

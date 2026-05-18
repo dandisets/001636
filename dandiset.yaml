@@ -61,8 +61,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 6302141225
-  numberOfFiles: 444
+  numberOfBytes: 6417876637
+  numberOfFiles: 447
   numberOfSubjects: 2
   schemaKey: AssetsSummary
   species:
@@ -104,8 +104,11 @@ contributor:
   - identifier: https://ror.org/03czfpz43
     name: Emory University
     schemaKey: Affiliation
+  identifier: 0000-0001-9244-8088
   includeInCitation: true
   name: DeLong, Mahlon R.
+  roleName:
+  - dcite:Author
   schemaKey: Person
 - awardNumber: NS044551
   identifier: https://ror.org/01s5ya894

@@ -182,16 +182,27 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2025-11-11T15:48:24.913269+00:00'
-description: 'Electrophysiology recordings from primary motor cortex (M1) of macaque
-  monkeys (Macaca mulatta) during visuomotor step-tracking tasks, collected before
-  and after MPTP-induced parkinsonism. Recorded neuron types: Pyramidal tract neurons
-  (PTNs) and corticostriatal neurons (CSNs) identified through antidromic stimulation
-  from chronically implanted electrodes in the cerebral peduncle and posterior putamen.
-  Behavioral paradigm: Visuomotor step-tracking task requiring flexion or extension
-  elbow movements to align a cursor with visual targets. Trials included center hold,
-  target presentation, movement execution, target hold, and liquid reward delivery.
-  Unexpected torque perturbations were applied during a subset of trials to elicit
-  stretch reflexes.'
+description: "Longitudinal single-unit electrophysiology recordings from the primary
+  motor cortex of two rhesus macaque monkeys (Macaca mulatta), acquired both before
+  and after induction of parkinsonism by systemic MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine)
+  intoxication. Recordings span two subjects (Leu, recorded in 1993; Venus, recorded
+  between 1999 and 2000), covering both the healthy baseline state and the parkinsonian
+  state, and support analyses of how dopaminergic lesion alters cortical motor encoding.\n
+  \nWithin primary motor cortex, two classes of cortical projection neurons are distinguished
+  by antidromic activation from chronically implanted stimulating electrodes: pyramidal
+  tract neurons (identified by stimulation from the cerebral peduncle) and corticostriatal
+  neurons (identified by stimulation from the posterior putamen). Each recording site
+  is verified as primary motor cortex by intracortical microstimulation at thresholds
+  below 30 microamperes.\n\nThe behavioral paradigm is a visuomotor step-tracking
+  task in which the monkey produces flexion or extension elbow movements against a
+  torque motor to align a cursor with visual targets, through a structured sequence
+  of center hold, target presentation, movement execution, target hold, and liquid
+  reward. A subset of trials includes unexpected torque perturbations that elicit
+  muscle-stretch reflexes, enabling analyses of sensory feedback in the parkinsonian
+  state.\n\nOriginal analyses on subsets of these data appear in three peer-reviewed
+  papers (Pasquereau and Turner 2011, Cerebral Cortex; Pasquereau and Turner 2013,
+  Frontiers in Systems Neuroscience; Pasquereau, DeLong, and Turner 2016, Brain),
+  linked in the related-resources section."
 ethicsApproval: []
 id: DANDI:001636/draft
 identifier: DANDI:001636

@@ -252,13 +252,15 @@ relatedResource:
   repository: Brain A Journal of Neurology
   resourceType: dcite:JournalArticle
   schemaKey: Resource
-- identifier: https://github.com/catalystneuro/turner-lab-to-nwb
-  name: NWB conversion code for the Turner Lab MPTP M1 dataset
-  relation: dcite:IsCompiledBy
-  repository: GitHub
-  resourceType: dcite:Software
+- identifier: 
+    https://github.com/dandi/example-notebooks/tree/master/001636/TurnerLab/motor_cortex
+  name: Example Notebooks for Turner Lab Motor Cortex Dataset
+  relation: dcite:IsSupplementedBy
+  repository: GitHub (dandi/example-notebooks)
+  resourceType: dcite:ComputationalNotebook
   schemaKey: Resource
-  url: https://github.com/catalystneuro/turner-lab-to-nwb
+  url: 
+    https://github.com/dandi/example-notebooks/tree/master/001636/TurnerLab/motor_cortex
 - identifier: https://github.com/catalystneuro/turner-lab-to-nwb/tree/main/notebooks
   name: 'Tutorial notebooks: data loading, PETH, GLM analysis, and antidromic spike
     detection'
@@ -267,6 +269,13 @@ relatedResource:
   resourceType: dcite:ComputationalNotebook
   schemaKey: Resource
   url: https://github.com/catalystneuro/turner-lab-to-nwb/tree/main/notebooks
+- identifier: https://github.com/catalystneuro/turner-lab-to-nwb
+  name: NWB conversion code for the Turner Lab MPTP M1 dataset
+  relation: dcite:IsCompiledBy
+  repository: GitHub
+  resourceType: dcite:Software
+  schemaKey: Resource
+  url: https://github.com/catalystneuro/turner-lab-to-nwb
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10

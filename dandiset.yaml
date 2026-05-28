@@ -37,6 +37,9 @@ about:
 - identifier: http://purl.obolibrary.org/obo/UBERON_0001874
   name: putamen
   schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/CL_0000598
+  name: pyramidal neuron
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -251,7 +254,7 @@ relatedResource:
   schemaKey: Resource
 - identifier: https://github.com/catalystneuro/turner-lab-to-nwb
   name: NWB conversion code for the Turner Lab MPTP M1 dataset
-  relation: dcite:IsSupplementedBy
+  relation: dcite:IsCompiledBy
   repository: GitHub
   resourceType: dcite:Software
   schemaKey: Resource

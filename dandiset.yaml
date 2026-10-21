@@ -64,8 +64,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 2136162821
-  numberOfFiles: 403
+  numberOfBytes: 2676189241
+  numberOfFiles: 439
   numberOfSubjects: 2
   schemaKey: AssetsSummary
   species:
@@ -187,25 +187,34 @@ contributor:
 dateCreated: '2025-11-11T15:48:24.913269+00:00'
 description: "Longitudinal single-unit electrophysiology recordings from the primary
   motor cortex of two rhesus macaque monkeys (Macaca mulatta), acquired both before
-  and after induction of parkinsonism by systemic MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine)
-  intoxication. Recordings span two subjects (Leu, recorded in 1993; Venus, recorded
-  between 1999 and 2000), covering both the healthy baseline state and the parkinsonian
-  state, and support analyses of how dopaminergic lesion alters cortical motor encoding.\n
-  \nWithin primary motor cortex, two classes of cortical projection neurons are distinguished
-  by antidromic activation from chronically implanted stimulating electrodes: pyramidal
-  tract neurons (identified by stimulation from the cerebral peduncle) and corticostriatal
-  neurons (identified by stimulation from the posterior putamen). Each recording site
-  is verified as primary motor cortex by intracortical microstimulation at thresholds
-  below 30 microamperes.\n\nThe behavioral paradigm is a visuomotor step-tracking
-  task in which the monkey produces flexion or extension elbow movements against a
-  torque motor to align a cursor with visual targets, through a structured sequence
-  of center hold, target presentation, movement execution, target hold, and liquid
-  reward. A subset of trials includes unexpected torque perturbations that elicit
-  muscle-stretch reflexes, enabling analyses of sensory feedback in the parkinsonian
-  state.\n\nOriginal analyses on subsets of these data appear in three peer-reviewed
-  papers (Pasquereau and Turner 2011, Cerebral Cortex; Pasquereau and Turner 2013,
-  Frontiers in Systems Neuroscience; Pasquereau, DeLong, and Turner 2016, Brain),
-  linked in the related-resources section."
+  and after induction of hemiparkinsonism by infusion of MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine)
+  into the left internal carotid artery. Recordings span two subjects (Leu, recorded
+  between August 1992 and December 1993; Venus, recorded between 1999 and 2000), covering
+  both the healthy baseline state and the parkinsonian state, and support analyses
+  of how dopaminergic lesion alters cortical motor encoding.\n\nWithin primary motor
+  cortex, two classes of cortical projection neurons are distinguished by antidromic
+  activation from chronically implanted stimulating electrodes: pyramidal tract neurons
+  (identified by stimulation from the cerebral peduncle) and corticostriatal neurons
+  (identified by stimulation from the posterior putamen). Each recording site is verified
+  as primary motor cortex by intracortical microstimulation at thresholds below 30
+  microamperes.\n\nThe behavioral paradigm is a visuomotor step-tracking task in which
+  the monkey produces flexion or extension movements of the elbow (Venus) or wrist
+  (Leu) against a torque motor to align a cursor with visual targets, through a structured
+  sequence of center hold, target presentation, movement execution, target hold, and
+  liquid reward. In Venus, a subset of trials includes unexpected torque perturbations
+  that elicit muscle-stretch reflexes, enabling analyses of sensory feedback in the
+  parkinsonian state.\n\nOriginal analyses on subsets of these data appear in three
+  peer-reviewed papers (Pasquereau and Turner 2011, Cerebral Cortex; Pasquereau and
+  Turner 2013, Frontiers in Systems Neuroscience; Pasquereau, DeLong, and Turner 2016,
+  Brain), linked in the related-resources section.\n\nSome properties of the files
+  differ from the papers. The Leu files contain no perturbation times, so the Leu
+  perturbation analyses of Pasquereau and Turner (2013) cannot be repeated from this
+  dataset. The Leu analog signals are stored at 100 Hz, where the papers give 200
+  Hz. In Venus, perturbations start about 1.7 s after the center target appears in
+  most trials, where Pasquereau and Turner (2013) describe a random delay of 1 to
+  2 s after the monkey captures the center target. EMG, LFP and the torque command
+  are in arbitrary units, because the amplifier gains are not in the MATLAB files
+  the dataset was converted from."
 ethicsApproval: []
 id: DANDI:001636/draft
 identifier: DANDI:001636

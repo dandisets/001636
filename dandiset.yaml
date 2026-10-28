@@ -64,8 +64,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 2289196251
-  numberOfFiles: 413
+  numberOfBytes: 2676360073
+  numberOfFiles: 439
   numberOfSubjects: 2
   schemaKey: AssetsSummary
   species:
@@ -210,9 +210,10 @@ description: "Longitudinal single-unit electrophysiology recordings from the pri
   differ from the papers. The Leu files contain no perturbation times, so the Leu
   perturbation analyses of Pasquereau and Turner (2013) cannot be repeated from this
   dataset. The Leu analog signals are stored at 100 Hz, where the papers give 200
-  Hz. In Venus, perturbations start about 1.7 s after the center target appears in
-  most trials, where Pasquereau and Turner (2013) describe a random delay of 1 to
-  2 s after the monkey captures the center target. EMG, LFP and the torque command
+  Hz. The Venus analog signals were digitized at 500 Hz and are stored interpolated
+  to 1 kHz. In Venus, perturbations start about 1.7 s after the center target appears
+  in most trials, where Pasquereau and Turner (2013) describe a random delay of 1
+  to 2 s after the monkey captures the center target. EMG, LFP and the torque command
   are in arbitrary units, because the amplifier gains are not in the MATLAB files
   the dataset was converted from."
 ethicsApproval: []

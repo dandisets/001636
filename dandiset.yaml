@@ -80,7 +80,7 @@ assetsSummary:
   - ElectricalSeries
 citation: Turner, Robert; Pasquereau, Benjamin; DeLong, Mahlon R. (2026) Pyramidal
   tract and corticostriatal neuron recordings in MPTP-treated macaque performing visuomotor
-  tasks (Version draft) [Data set]. DANDI Archive. https://dandiarchive.org/dandiset/001636/draft
+  tasks (Version 0.261124.1906) [Data set]. DANDI Archive. https://doi.org/10.48324/dandi.001636/0.261124.1906
 contributor:
 - affiliation:
   - identifier: https://ror.org/01an3r305
@@ -185,6 +185,7 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
 dateCreated: '2025-11-11T15:48:24.913269+00:00'
+datePublished: '2026-11-24T19:06:13.357493+00:00'
 description: "Longitudinal single-unit electrophysiology recordings from the primary
   motor cortex of two rhesus macaque monkeys (Macaca mulatta), acquired both before
   and after induction of hemiparkinsonism by infusion of MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine)
@@ -216,8 +217,9 @@ description: "Longitudinal single-unit electrophysiology recordings from the pri
   to 2 s after the monkey captures the center target. EMG, LFP and the torque command
   are in arbitrary units, because the amplifier gains are not in the MATLAB files
   the dataset was converted from."
+doi: 10.48324/dandi.001636/0.261124.1906
 ethicsApproval: []
-id: DANDI:001636/draft
+id: DANDI:001636/0.261124.1906
 identifier: DANDI:001636
 keywords:
 - visuomotor
@@ -237,9 +239,21 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/001636/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/001636/0.261124.1906/assets.yaml
 name: Pyramidal tract and corticostriatal neuron recordings in MPTP-treated macaque
   performing visuomotor tasks
+publishedBy:
+  endDate: '2026-11-24T19:06:13.357493+00:00'
+  id: urn:uuid:6ff65e53-8a50-40d8-986c-569bd718b856
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-24T19:06:13.357493+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:4b559de3-16aa-4201-a22a-9de921643eaf
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.3389/fnsys.2013.00098
   name: 'Primary motor cortex of the parkinsonian monkey: altered neuronal responses
@@ -286,9 +300,50 @@ relatedResource:
   resourceType: dcite:Software
   schemaKey: Resource
   url: https://github.com/catalystneuro/turner-lab-to-nwb
+releaseNotes: "This version re-converts all sessions to fix the problems found by
+  a reproduction attempt (https://github.com/catalystneuro/turner-lab-to-nwb/issues/31).
+  It has 439 sessions, against 447 in 0.260518.1819: eight source files that continue
+  another file's recording are now part of that session (see Sessions and units).
+  Unit names changed and `unit_also_in_session_id` is gone, so code written for the
+  previous version needs updating.\n\nTiming and analog streams:\n\n- The manipulandum,
+  EMG and LFP streams start at each trial's start time, on the same clock as the trials
+  and spikes. Before, each trial's samples were laid end to end, and the analog clock
+  fell behind by up to 365 ms within a session.\n- The joint angle sign is corrected:
+  positive is flexion.\n- Leu's analog series are named after the wrist, the joint
+  Leu moved, instead of the elbow.\n\nSessions and units:\n\n- When a neuron was recorded
+  across two source files, both files are now one session, with the trials of each
+  file in order and a `source_file` column in the trials table. The previous version
+  never read the second file, so some trials were missing.\n- The four \"b\" files
+  that repeat another file's trials (`v3607b`, `v4527b`, `v4810b`, `v5604b`) are folded
+  into the session they repeat. Where the two files' projection labels disagree, a
+  tested label is kept over \"not tested\", and the one real conflict (`v5811` and
+  `v5812`, unit 2) is written in the session notes.\n- Units are named after their
+  source file (`v0502.1`, or `v2701.1+v2702.2` for a neuron recorded across two files),
+  each unit points to the electrodes of the files it was recorded in, and `Units.resolution`
+  is set.\n\nAnnotations of what the source does not have:\n\n- The Leu trials have
+  `not_available` as the perturbation type, since the source has no perturbation times
+  for that monkey. They said \"none\" before, which read as no perturbation delivered.\n
+  - The torque series describes the pulse sizes as they appear in the source, which
+  gives no scale in newton metres. The paper's 0.1 Nm is kept as an attributed note.\n
+  - The EMG processing is described in the paper's words, and the EMG and LFP series
+  say the lab confirmed that no voltage calibration is available.\n- The Leu target
+  amplitudes of `l14802` and `l16301`, which disagree with the movements, are NaN.\n
+  \nAntidromic stimulation:\n\n- The sweeps stored in a unit's second file are included,
+  the sweep times match the samples they reference, and each sweep points to its row
+  of the units table. The stimulation protocol comes from an explicit table, with
+  the lab's raw label kept in `source_label`.\n\nMetadata:\n\n- The Leu files had
+  the Venus surgery text. Each monkey now has its own.\n- The trials table's HED annotations
+  are updated for ndx-hed 0.3.0.\n- Species, experimenters (ORCID iDs), institution
+  (ROR) and the primary motor cortex location (UBERON) are annotated with external
+  resource terms.\n- The Dandiset description is corrected on the MPTP route (infusion
+  into the left internal carotid artery), the joint Leu moved (the wrist), and the
+  dates of Leu's recordings (August 1992 to December 1993). It also says that the
+  torque onset is measured from the appearance of the center target, as the source
+  has no event for its capture, and that the Venus analog signals were digitized at
+  500 Hz and stored interpolated to 1 kHz."
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.10
-url: https://dandiarchive.org/dandiset/001636/draft
-version: draft
+url: https://dandiarchive.org/dandiset/001636/0.261124.1906
+version: 0.261124.1906
 wasGeneratedBy: []
